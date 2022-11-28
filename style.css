@@ -12,4 +12,26 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar .navbar-nav ul {
+  display: flex;
+  list-style: none;
+}
+.navbar .navbar-nav ul li {
+  margin-right: 20px;
+}
+
+.hero {
+  background-image: url("../../images/bg-curvy-mobile.svg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=style.css.map */
