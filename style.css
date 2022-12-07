@@ -12,8 +12,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-img {
-  width: 100%;
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .navbar {
@@ -32,6 +36,18 @@ img {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.about-us .about-us-row .about-us-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.about-us .about-us-row .about-us-tile p {
+  width: 350px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
