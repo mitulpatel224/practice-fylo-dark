@@ -1,0 +1,15 @@
+.about-us {
+  .about-us-row {
+    .about-us-tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 50px auto;
+      p {
+        width: 350px;
+        text-align: center;
+      }
+    }
+  }
+}
