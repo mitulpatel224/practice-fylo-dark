@@ -1,0 +1,23 @@
+.stay-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  img {
+    width: 100%;
+  }
+  .external-link{
+    display: inline-flex;
+    align-items: center;
+  }
+  .icon-right {
+    width: 18px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .stay-in-touch {
+    flex-direction: row;
+  }
+}
