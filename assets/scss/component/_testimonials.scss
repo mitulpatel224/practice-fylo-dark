@@ -1,6 +1,13 @@
 .testimonials {
   margin: 40px;
+  margin-top: $extraMarginTop;
   position: relative;
+  .testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+  }
   .quotes {
     position: absolute;
     top: -20px;
@@ -16,6 +23,7 @@
     box-shadow: 0px 0px 10px 0px $darkBlue4;
     font-size: 12px;
     letter-spacing: 0.3px;
+    width: 350px;
     .user {
       margin-top: 20px;
       display: flex;
@@ -41,6 +49,21 @@
           font-weight: 400;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonials {
+    .quotes {
+      left: 45px;
+      height: 40px;
+      img {
+        height: 30px;
+      }
+    }
+    .testimonial-cards {
+      flex-direction: row;
     }
   }
 }

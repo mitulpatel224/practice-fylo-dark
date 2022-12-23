@@ -44,8 +44,13 @@
   // }
 }
 
-@media only screen and (min-width: 768px) {
-  .here {
+@media (min-width: 768px) {
+  .hero {
     // max-width: 768px;
+    .hero-content {
+      h1 {
+        font-size: 42px;
+      }
+    }
   }
 }

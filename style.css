@@ -18,6 +18,7 @@ body {
 
 a {
   color: hsl(176deg, 68%, 64%);
+  text-decoration: none;
 }
 a:visited, a:active {
   color: hsl(176deg, 68%, 64%);
@@ -52,6 +53,7 @@ h3 {
 
 .d-flex {
   display: flex;
+  align-content: center;
 }
 
 .flex-col {
@@ -138,6 +140,14 @@ h3 {
   height: 50px;
 }
 
+@media (min-width: 768px) {
+  .hero .hero-content h1 {
+    font-size: 42px;
+  }
+}
+.about-us {
+  margin-top: 180px;
+}
 .about-us .about-us-row .about-us-tile {
   display: flex;
   flex-direction: column;
@@ -158,13 +168,72 @@ h3 {
     margin: 0 auto;
   }
 }
-.early-access {
+.early-access-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.early-access-wrapper .early-access {
+  position: relative;
+  bottom: -120px;
+  margin: 20px;
+  padding: 40px;
   background-color: hsl(218deg, 28%, 13%);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px hsl(216deg, 53%, 9%);
+}
+.early-access-wrapper .early-access h3 {
+  padding: 20px auto;
+}
+.early-access-wrapper .early-access p {
+  margin-bottom: 20px;
+}
+.early-access-wrapper .early-access .access-form {
+  display: flex;
+  flex-direction: column;
+}
+.early-access-wrapper .early-access .access-form input[type=email] {
+  height: 50px;
+  border-radius: 50px;
+  padding-left: 30px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.early-access-wrapper .early-access .access-form .call-to-action {
+  height: 50px;
 }
 
+@media (min-width: 768px) {
+  .early-access-wrapper .early-access {
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+  }
+  .early-access-wrapper .early-access h3 {
+    font-size: 32px;
+  }
+  .early-access-wrapper .early-access .access-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .early-access-wrapper .early-access .access-form input[type=email] {
+    width: 60%;
+  }
+  .early-access-wrapper .early-access .access-form .call-to-action {
+    width: 180px;
+  }
+}
 .testimonials {
   margin: 40px;
+  margin-top: 180px;
   position: relative;
+}
+.testimonials .testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
 }
 .testimonials .quotes {
   position: absolute;
@@ -181,6 +250,7 @@ h3 {
   box-shadow: 0px 0px 10px 0px hsl(216deg, 53%, 9%);
   font-size: 12px;
   letter-spacing: 0.3px;
+  width: 350px;
 }
 .testimonials .testimonial .user {
   margin-top: 20px;
@@ -209,11 +279,24 @@ h3 {
   font-weight: 400;
 }
 
+@media (min-width: 768px) {
+  .testimonials .quotes {
+    left: 45px;
+    height: 40px;
+  }
+  .testimonials .quotes img {
+    height: 30px;
+  }
+  .testimonials .testimonial-cards {
+    flex-direction: row;
+  }
+}
 .stay-in-touch {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px;
+  margin-top: 180px;
 }
 .stay-in-touch img {
   width: 100%;
@@ -227,13 +310,77 @@ h3 {
   margin-left: 5px;
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 768px) {
   .stay-in-touch {
     flex-direction: row;
+  }
+  .stay-in-touch h2 {
+    font-size: 38px;
+  }
+  .stay-in-touch .ls {
+    flex-basis: 60%;
+  }
+  .stay-in-touch .rs {
+    flex-basis: 40%;
   }
 }
 .footer {
   background-color: hsl(216deg, 53%, 9%);
+  padding: 40px;
+  padding-top: 200px;
+}
+.footer a {
+  color: hsl(0deg, 0%, 100%);
+}
+.footer a:visited, .footer a:active {
+  color: hsl(0deg, 0%, 100%);
+}
+.footer .logo {
+  margin-bottom: 40px;
+}
+.footer .info {
+  margin-bottom: 40px;
+}
+.footer .info .icon {
+  margin-right: 20px;
+}
+.footer .info .icon figure {
+  width: 15px;
+  padding-top: 5px;
+}
+.footer .info .icon figure img {
+  width: 100%;
+}
+.footer .footer-nav {
+  margin-bottom: 40px;
+}
+.footer .footer-nav ul {
+  list-style: none;
+}
+.footer .social-nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .footer .footer-menus-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+  .footer .footer-menus-wrapper .info.location-info {
+    width: 400px;
+  }
+  .footer .footer-menus-wrapper .info.contact-info {
+    width: 300px;
+  }
+  .footer .footer-menus-wrapper .footer-nav.page-nav-1,
+.footer .footer-menus-wrapper .footer-nav.page-nav-2 {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
