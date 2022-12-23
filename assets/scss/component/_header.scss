@@ -1,0 +1,32 @@
+.navbar {
+  background-color: $darkBlue1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 100px;
+  }
+  .navbar-nav {
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 60px 80px;
+    .navbar-nav {
+      ul {
+        li {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}

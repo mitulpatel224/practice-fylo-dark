@@ -1,0 +1,33 @@
+.stay-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  margin-top: $extraMarginTop;
+  img {
+    width: 100%;
+  }
+  .external-link {
+    display: inline-flex;
+    align-items: center;
+  }
+  .icon-right {
+    width: 18px;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .stay-in-touch {
+    flex-direction: row;
+    h2 {
+      font-size: 38px;
+    }
+    .ls {
+      flex-basis: 60%;
+    }
+    .rs {
+      flex-basis: 40%;
+    }
+  }
+}

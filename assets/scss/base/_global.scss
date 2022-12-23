@@ -1,0 +1,88 @@
+$extraMarginTop: 180px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: $white;
+  background-color: $darkBlue2;
+  font-family: $font-family-body;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+a {
+  color: $cyan;
+  text-decoration: none;
+  &:visited,
+  &:active {
+    color: $cyan;
+  }
+}
+
+img {
+  // width: 100%;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.container {
+  margin: 20px;
+}
+
+.desktop {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+  align-content: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.call-to-action {
+  border: 0;
+  background-image: linear-gradient(to right, $cyan, $blue);
+  border-radius: 50px;
+  color: $white;
+  font-family: $font-family-head;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile {
+    display: initial;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .desktop {
+    display: initial;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
